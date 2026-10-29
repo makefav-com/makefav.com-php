@@ -1,5 +1,5 @@
 {
-    "name": "makefav/makefav-php",
+    "name": "makefav.com-php/makefav-php",
     "description": "PHP client and examples for the MakeFav Favicon API – generate favicon.ico, Apple touch icons, Android/PWA icons and manifest.json from any image.",
     "type": "library",
     "keywords": ["favicon", "favicon-generator", "ico", "apple-touch-icon", "pwa", "manifest", "api", "makefav"],
