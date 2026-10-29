@@ -1,5 +1,9 @@
 # MakeFav PHP – Favicon API client & examples
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-2f9e68.svg)](LICENSE)
+[![PHP 7.4+](https://img.shields.io/badge/php-%3E%3D7.4-777bb4.svg)](https://www.php.net/)
+[![API docs](https://img.shields.io/badge/docs-makefav.com-2f9e68.svg)](https://makefav.com/developers)
+
 Generate a complete, standards-compliant favicon package from any image with one API call:
 `favicon.ico`, PNG favicons, Apple touch icons, Android/PWA icons (incl. maskable),
 Windows tiles, `manifest.json`, `browserconfig.xml` and the ready-to-paste HTML for your `<head>`.
@@ -16,13 +20,29 @@ Powered by **[MakeFav.com](https://makefav.com)** – free favicon generator, pi
 
 ## Installation
 
-With Composer:
+Clone the repository (or use **Code → Download ZIP** on GitHub):
 
 ```bash
-composer require makefav/makefav-php
+git clone https://github.com/makefav-com/makefav.com-php.git
+cd makefav.com-php
 ```
 
-Or without Composer: download this repository and `require` the two files in `src/`.
+No Composer needed – the examples load the two files in `src/` automatically.
+In your own project simply:
+
+```php
+require 'path/to/makefav.com-php/src/MakeFavException.php';
+require 'path/to/makefav.com-php/src/MakeFavClient.php';
+```
+
+### With Composer
+
+Add the GitHub repository to your `composer.json` and require the package:
+
+```bash
+composer config repositories.makefav vcs https://github.com/makefav-com/makefav.com-php
+composer require makefav/makefav-php:dev-main
+```
 
 ## Quick start
 
@@ -116,6 +136,11 @@ or `me()` for the remaining quota.
 
 Never commit your API key. Keep it in an environment variable or a `.env` file that is
 listed in `.gitignore`. You can revoke and recreate keys at any time in your MakeFav account.
+
+## Contributing
+
+Bug reports and pull requests are welcome at
+[github.com/makefav-com/makefav.com-php](https://github.com/makefav-com/makefav.com-php/issues).
 
 ## License
 
