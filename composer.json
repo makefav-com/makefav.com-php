@@ -1,0 +1,23 @@
+{
+    "name": "makefav/makefav-php",
+    "description": "PHP client and examples for the MakeFav Favicon API – generate favicon.ico, Apple touch icons, Android/PWA icons and manifest.json from any image.",
+    "type": "library",
+    "keywords": ["favicon", "favicon-generator", "ico", "apple-touch-icon", "pwa", "manifest", "api", "makefav"],
+    "homepage": "https://makefav.com/developers",
+    "license": "MIT",
+    "authors": [
+        {"name": "Tomas Rohlena", "homepage": "https://makefav.com/author/tomas-rohlena"}
+    ],
+    "support": {
+        "email": "support@makefav.com",
+        "docs": "https://makefav.com/developers"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {"MakeFav\\": "src/"}
+    }
+}

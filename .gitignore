@@ -1,0 +1,8 @@
+/vendor/
+composer.lock
+.env
+examples/favicons/
+examples/*.zip
+.DS_Store
+.idea/
+.vscode/
